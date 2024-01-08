@@ -1,3 +1,7 @@
+# COM774 CW2 
+# Prakash Chakraborty
+# B00916260
+
 import numpy as np
 import pandas as pd
 import argparse
