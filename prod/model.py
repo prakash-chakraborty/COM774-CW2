@@ -34,6 +34,7 @@ labels=['LAYING', 'SITTING','STANDING','WALKING','WALKING_DOWNSTAIRS','WALKING_U
 import itertools
 import numpy as np
 import matplotlib.pyplot as plt
+from sklearn import metrics
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import RandomizedSearchCV
 plt.rcParams["font.family"] = 'DejaVu Sans'
