@@ -1,0 +1,14 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+code: .
+command: python model.py --trainingdata ${{ inputs.training_data }} --testingdata ${{ inputs.testing_data }}
+inputs:
+  training_data:
+    type: uri_file
+    path: azureml:har_train:1
+  testing_data:
+    type: uri_file
+    path: azureml:har_test:1
+environment: azureml://registries/azureml/environments/sklearn-1.1/versions/14
+compute: cw2
+experiment_name: COM774-CW2
+description: Coursework 2 COM 774
